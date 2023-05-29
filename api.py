@@ -7,7 +7,7 @@ class ApiPets:
         self.base_url = "https://petfriends.skillfactory.ru/"
         self.headers = {'accept': 'application/json',
                         "password": value.password,
-                        "email": value.mail}
+                        "email": value.email}
 
     def get_key(self):
         response = requests.get(f"{self.base_url}/api/key", params={'status': 'available'},
